@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/chapter.css">
+    <link rel="stylesheet" href="../css/question.css">
+
+    <style>
+        math {display:none;}
+
+    </style>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Register.StartupHook("NativeMML Jax Ready",function () {
+          document.getElementById("hide-math").disabled = true;
+        });
+
+    </script>
+
+
+    <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            showMathMenu: false,
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            messageStyle: "none",
+            tex2jax: { inlineMath: [["\\(","\\)"]] },
+            tex2jax: {preview: "none",
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true},
+            "HTML-CSS": { linebreaks: { automatic: true, width: "container" },availableFonts: ["TeX"],mtextFontInherit: true },
+            CommonHTML: { linebreaks: { automatic: true } }
+         });
+    </script>
+
+    <script type="text/javascript"
+            src="../MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML&delayStartupUntil=configured"></script>
+</head>
+
+<body oncopy="return false" oncut="return false" onpaste="return false">
+<div ng-app="embibeApp" ng-controller="appCtrl">
+    <div class="test-question__container">
+
+        <span dynamic-data="jsonData"></span>
+
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/question1.js"></script>
+
+<script type="text/javascript">
+
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
+    $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+
+        MathJax.Hub.Configured()
+
+
+</script>
+
+
+</html>

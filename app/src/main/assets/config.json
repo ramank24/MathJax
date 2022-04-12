@@ -1,0 +1,106 @@
+{
+  "app_meta_data": {
+    "app_id": "Aakash--SandwichApp",
+    "pack_type": "PACK-AAKASH"
+  },
+  "s3_config": {
+    "s3_bucket_name": "embibe-offline-test-data",
+    "s3_image_bucket_name": "embibe-cdn"
+  },
+  "institute_info": {
+    "contact_no": "9898989898",
+    "web_url": "www.Aakash.com",
+    "institute_name": "Aakash",
+    "contact_institute_enabled": true
+  },
+  "splash_customizations": {},
+  "login_config": {
+    "branding": "",
+    "features": [
+      "signin",
+      "signup"
+    ],
+    "signin_config": {
+      "features": [
+        "forgot_password"
+      ]
+    },
+    "signup_config": {
+      "config": "form_app_signup / client_info",
+      "form_app_signup": [
+        "name",
+        "candidate_id",
+        "phone",
+        "email_id",
+        "password",
+        "confirm_password"
+      ],
+      "client_info": [
+        "Redirect to the client webpage > including phone number and all"
+      ]
+    }
+  },
+  "home_config": {
+    "branding": "powered by embibe",
+    "features": [
+      "test",
+      "practice",
+      "learn",
+      "study",
+      "videos"
+    ],
+    "menu": [
+      "profile",
+      "feedback",
+      "chat_support",
+      "about(mandatory)",
+      "refresh(mandatory)",
+      "logout"
+    ]
+  },
+  "test_config": {
+    "orientation": "landscape",
+    "branding": "powered by embibe",
+    "advanced_feedback": "show/hide",
+    "feedback": [
+      "annotation_instructions",
+      "marks_scored",
+      "score_and_time_analysis",
+      "test_taking_strategy",
+      "solution_and_conceptwise_analysis"
+    ],
+    "features": [
+      "question_paper",
+      "show_concept",
+      "jumbled_sequence",
+      "internet_allowed",
+      "show_chapterwise_analysis"
+    ]
+  },
+  "practice_config": {
+    "orientation": "portrait / landscape",
+    "branding": "powered by embibe",
+    "question_limit": "25",
+    "feedback": [
+      "practice_summary",
+      "question_wise_summary"
+    ],
+    "features": [
+      "show_concept"
+    ]
+  },
+  "sd_card_config": {
+    "sd_card_base_dir": "production/IIB-Nanded/SandwichApp/1.0.0",
+    "sd_card_bucket_name": "Download/embibe/",
+    "sd_card_video_dir": "SKV/Videos"
+  },
+  "profile_config": {
+    "branding": ""
+  },
+  "about_us_config": {
+    "branding": ""
+  },
+  "migration_config": {
+    "branding": ""
+  }
+}
